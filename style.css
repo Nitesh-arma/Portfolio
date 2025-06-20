@@ -84,8 +84,9 @@ nav a:hover {
     height: 600px;
 
 }
-#home{
-        scroll-margin-top: 100px;
+
+#home {
+    scroll-margin-top: 100px;
 
 }
 
@@ -135,94 +136,112 @@ nav a:hover {
     margin-bottom: 200px;
 
 }
-.img2 img{
+
+.img2 img {
     width: 400px;
     height: 400px;
 }
-.sec2 .abtme{
+
+.sec2 .abtme {
     width: 60%;
-} 
-.sec2 h1{
+}
+
+.sec2 h1 {
     font-size: 50px;
     color: #00bbf0;
 }
-.sec2 h3{
+
+.sec2 h3 {
     font-size: 20px;
     color: white;
 }
 
-#aboutme{
+#aboutme {
     scroll-margin-top: 100px;
 
 }
 
 
-.sec3{
+.sec3 {
 
 
     color: white;
-     padding: 0px 50px;
+    padding: 0px 50px;
     margin: 100px 80px;
     font-family: sans-serif;
     height: 500px;
     margin-top: 200px;
-   align-items: center;
+    align-items: center;
 }
-#contact{
+
+#contact {
     scroll-margin-top: 50px;
 }
 
-.sec3 h1{
+.sec3 h1 {
     color: #00bbf0;
     font-size: 50px;
     text-align: center;
 }
-.sec3{
-    
+
+.sec3 {
+
     text-align: center;
 }
-.social{
+
+.social {
     display: flex;
     justify-content: space-evenly;
 }
-.social i{
-   font-size: 135px;
+
+.social i {
+    font-size: 135px;
 }
-.social i:hover{
-    color: rgb(143, 131, 136) ;
+
+.social i:hover {
+    color: rgb(143, 131, 136);
 }
-.social a{
+
+.social a {
     text-decoration: none;
     color: white;
 }
-.pro{
+
+.pro {
     display: flex;
     justify-content: space-around;
 }
-.pro img{
+
+.pro img {
     width: 500px;
     height: 250px;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
 
 }
-.mm h1{
+
+.mm h1 {
     font-size: 50px;
     color: #00bbf0;
     text-align: center;
-    
+
 }
-.pro1,.pro2{
+
+.pro1,
+.pro2 {
     border: 2px solid grey;
     width: 503px;
     border-radius: 35px;
 }
-.pro1 p,.pro2 p {
+
+.pro1 p,
+.pro2 p {
     padding: 15px 25px;
     color: white;
 }
-#projects{
-      /* display: flex; */
+
+#projects {
+    /* display: flex; */
     justify-content: space-between;
     align-items: center;
     padding: 0px 50px;
@@ -230,4 +249,136 @@ nav a:hover {
     font-family: sans-serif;
     height: 500px;
     scroll-margin-top: 80px;
+}
+
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .bra {
+        display: none;
+    }
+
+    nav h1 {
+        font-size: 30px;
+    }
+
+    .sec1,
+    .sec2,
+    .sec3,
+    #projects,
+    #aboutme,
+    #contact {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 10px;
+        padding: 10px;
+        height: auto;
+        width: auto;
+    }
+
+    .sec1 img,
+    .img2 img,
+    .pro img {
+        width: 100%;
+        height: auto;
+        border-radius: 25px;
+    }
+
+    .abtme {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sec2 h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .sec2 h3 {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .pro {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .pro1,
+    .pro2 {
+        width: 95%;
+    }
+
+    .pro1 p,
+    .pro2 p {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+    .mm h1 {
+        font-size: 32px;
+    }
+
+    #contact {
+        clear: both;
+        width: 100%;
+        background-color: #010f21;
+        margin: 40px 0;
+    }
+
+    .sec3 {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sec3 h1 {
+        font-size: 30px;
+        color: #00bbf0;
+        margin-top: 20px;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .social i {
+        font-size: 50px;
+        color: white;
+    }
+
+    .ff h2 {
+        font-size: 14px;
+        padding: 10px;
+        word-break: break-word;
+        color: white;
+    }
+
+    .sec3 br {
+        display: none;
+    }
 }
